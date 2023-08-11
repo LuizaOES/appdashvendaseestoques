@@ -1,311 +1,188 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!--Importar CSS-->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"
-    />
-    <link rel="stylesheet" href="./style.css" />
-    <title>AdminON</title>
-  </head>
-  <!--Ajustes de posicionamento e tamanho-->
-  <style>
-    .posicionar_cards{
-      position: relative;
-      left: -10px;
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Studio Valéria Cristina</title>
+    <link rel="shortcut icon" href="https://i.imgur.com/7USXoEl.png" />
+ <!-- Boorstrap 4 -->
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, intial-scale=1.0">
+ <meta http-equiv="X-UA-Compatible" content="ie=edge">
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+     crossorigin="anonymous"></script>
+ <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+     integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+     crossorigin="anonymous"></script>
+ <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+     integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+     crossorigin="anonymous"></script>
+ <script src="https://kit.fontawesome.com/e787fc2c3a.js" crossorigin="anonymous"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css"></link>
+ <!-- makes responsive -->
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <!-- including bootstrap css libraries -->
+ <link rel="stylesheet"
+ href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+ <!-- including bootstrap JavaScript libraries -->
+ <script
+ src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+ <!-- including bootstrap Popper libraries -->
+ <script
+ src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+ <!-- including bootstrap libraries -->
+ <script
+ src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <!--Biclioteca viewport que deixa responsivo-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/1ab94d0eba.js " crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="stylesheet.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="teladelogin_nova/code/style.css" media="screen" />
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/e787fc2c3a.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css"></link>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="description" content="">
+<meta name="author" content="">
+<link rel="icon" href="/docs/4.0/assets/img/favicons/favicon.ico">
+<link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/navbars/">
+<!-- Bootstrap core CSS -->
+<link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
+<!-- Custom styles for this template -->
+<link href="navbar.css" rel="stylesheet">
+<link
+rel="stylesheet"
+type="text/css"
+charset="UTF-8"
+href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css"/>
+<link
+rel="stylesheet"
+type="text/css"
+href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"/>
+<link rel="stylesheet" type="text/css" href="css/estilo.css">
+   <link href='https://fonts.google.com/specimen/Bebas+Neue?query=bebas' rel='stylesheet' type='text/css'>
+</head>
+<body>
+<style>
+body{
+        background: #292728;
+        width: auto;
+        height: auto;
     }
-    .tamanho_card_caixa{
-      height: 220px;
-      width: 365px;
+
+.foto-perfil {
+height: 100%;
+margin-top: 15px;
+width: auto;
+max-width: 100%;
+border-radius: 50%;
+}
+
+.section{
+    align-items: center;
+}
+
+.photo_section {
+  background-image: url(https://i.imgur.com/ZLMIBNK.png);
+  width: 100%;
+  height: 550px;
+  background-size: cover;
+  color: #ffffff;
+}
+
+.header {
+  background-image: url(https://i.imgur.com/0tgXb8d.png);
+  width: 100%;
+  height: 550px;
+  background-size: cover;
+  color: #ffffff;
+}
+
+p {
+    animation-duration: 2s;
+    animation-name: slidein;
+  }
+
+  @keyframes slidein {
+    from {
+      margin-top: 100%;
+      width: 100%;
     }
-    .posicionar_produtos{
-      position: relative;
-      left: -3px;
-    }
-  </style>
-<!--Navbar-->
-  <body>
-    <input type="checkbox" id="nav-toggle">
-    <div class="sidebar">
-      <div class="sidebar-brand">
-        <h2><span class="lab la-accusoft"></span><span>AdminON</span></h2>
-      </div>
-      <div class="sidebar-menu">
-        <ul>
-          <li>
-            <a href="" class="active">
-              <span class="las la-igloo"></span>
-              <span>Dashboard</span>
-            </a>
-          </li>
-          <li>
-            <a href="">
-              <span class="las la-users"></span>
-              <span>Colaboradores</span>
-            </a>
-          </li>
-          
-          <li>
-            <a href="">
-              <span class="las la-shopping-bag"></span>
-              <span>Produtos</span>
-            </a>
-          </li>
-          <li>
-            <a href="">
-              <span class="las la-receipt"></span>
-              <span>Caixa</span>
-            </a>
-          </li>
-         
-        </ul>
-      </div>
-    </div>
-    <!--Lateral-->
-    <div class="main-content">
-      <header>
-        <h2>
-          <label for="nav-toggle">
-            <sapan class="las la-bars"></sapan>
-          </label>
-          Dashboard
-        </h2>
-        
-        <div class="user-wrapper">
-          <img
-            src="./assets/1.jpg"
-            width="50px"
-            height="50px"
-            alt="user image"
-          />
-          <div>
-            <h4>Nome</h4>
-            <small> Administrador </small>
-          </div>
-        </div>
-      </header>
-      <main>
-        <!--Cards de cima-->
-        <div class="cards">
-          <div class="card posicionar_cards">
-            <div>
-              <h1>5</h1>
-              <span>Colaboradores</span>
-            </div>
-            <div>
-              <span class="las la-clipboard-list"></span>
-            </div>
-          </div>
-          <div class="card posicionar_cards">
-            <div>
-              <h1>560</h1>
-              <span>Produtos</span>
-            </div>
-            <div>
-              <span class="las la-shopping-bag"></span>
-            </div>
-          </div>
-          <div class="card posicionar_cards tamanho_card_caixa">
-            <div>
-              <h1>R$10.789,98</h1>
-              <span>Caixa on</span>
-            </div>
-            <div>
-              <span class="las la-wallet"></span>
-            </div>
-          </div>
-        </div>
-        <!-- Painel-->
-        <div class="recent-grid posicionar_produtos">
-          <div class="projects posicionar_produtos">
-            <div class="projects-card posicionar_produtos">
-              <div class="projects-card-header posicionar_produtos">
-                <h3>Produtos</h3>
-                <button>
-                  Todos <span class="las la-arrow-right"></span>
-                </button>
-              </div>
-              <div class="projects-card-body">
-                <div class="table-responsive">
-                  <table width="100%">
-                    <thead>
-                      <tr>
-                        <td>Produto</td>
-                        <td>Cod</td>
-                        <td>Andamento</td>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>Bolsas</td>
-                        <td>#0001</td>
-                        <td><span class="status green"></span> Em estoque</td>
-                      </tr>
-                      <tr>
-                        <td>Sapatos</td>
-                        <td>#0002</td>
-                        <td><span class="status purple"></span> Pedir</td>
-                      </tr>
-                      <tr>
-                        <td>Perfumes</td>
-                        <td>#0003</td>
-                        <td><span class="status green"></span> Em estoque</td>
-                      </tr>
-                      <tr>
-                        <td>Bolsas</td>
-                        <td>#0004</td>
-                        <td><span class="status orange"></span> Pedido Realizado</td>
-                      </tr>
-                      <tr>
-                        <td>Sapatos</td>
-                        <td>#0005</td>
-                        <td><span class="status green"></span> Em estoque</td>
-                      </tr>
-                      <tr>
-                        <td>Perfumes</td>
-                        <td>#0006</td>
-                        <td><span class="status orange"></span> Pedido Realizado</td>
-                      </tr>
-                      <tr>
-                        <td>Body Splash</td>
-                        <td>#0007</td>
-                        <td><span class="status green"></span> Em estoque</td>
-                      </tr>
-                      <tr>
-                        <td>Body Splash</td>
-                        <td>#0008</td>
-                        <td><span class="status purple"></span> Pedir</td>
-                      </tr>
-                      <tr>
-                        <td>Bolsas</td>
-                        <td>#0009</td>
-                        <td><span class="status purple"></span> Pedir</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!--Lateral painel da direita-->
-          <div class="customer">
-            <div class="customer-card">
-              <div class="customer-card-header">Colaboradores</div>
-              <button>Todos <span class="las la-arrow-right"></span></button>
-            </div>
-            <div class="customer-card-body">
-              <div class="info">
-                <img
-                  src="./assets/2.jpg"
-                  alt="Customer Image"
-                  width="40px"
-                  height="40px"
-                />
-                <div>
-                  <h4>Colaborador(a) 1</h4>
-                  <small>Cargo</small>
-                </div>
-              </div>
-              <div class="contact">
-                <span class="las la-user-circle"></span>
-                <span class="las la-comment"></span>
-                <span class="las la-phone"></span>
-              </div>
-            </div>
-            <div class="customer-card-body">
-              <div class="info">
-                <img
-                  src="./assets/2.jpg"
-                  alt="Customer Image"
-                  width="40px"
-                  height="40px"
-                />
-                <div>
-                  <h4>Colaborador(a) 2</h4>
-                  <small>Cargo</small>
-                </div>
-              </div>
-              <div class="contact">
-                <span class="las la-user-circle"></span>
-                <span class="las la-comment"></span>
-                <span class="las la-phone"></span>
-              </div>
-            </div>
-            <div class="customer-card-body">
-              <div class="info">
-                <img
-                  src="./assets/2.jpg"
-                  alt="Customer Image"
-                  width="40px"
-                  height="40px"
-                />
-                <div>
-                  <h4>Colaborador(a) 3</h4>
-                  <small>Cargo</small>
-                </div>
-              </div>
-              <div class="contact">
-                <span class="las la-user-circle"></span>
-                <span class="las la-comment"></span>
-                <span class="las la-phone"></span>
-              </div>
-            </div>
-            <div class="customer-card-body">
-              <div class="info">
-                <img
-                  src="./assets/2.jpg"
-                  alt="Customer Image"
-                  width="40px"
-                  height="40px"
-                />
-                <div>
-                  <h4>Colaborador(a) 4</h4>
-                  <small>Cargo</small>
-                </div>
-              </div>
-              <div class="contact">
-                <span class="las la-user-circle"></span>
-                <span class="las la-comment"></span>
-                <span class="las la-phone"></span>
-              </div>
-            </div>
-            <div class="customer-card-body">
-              <div class="info">
-                <img
-                  src="./assets/2.jpg"
-                  alt="Customer Image"
-                  width="40px"
-                  height="40px"
-                />
-                <div>
-                  <h4>Colaborador(a) 5</h4>
-                  <small>Cargo</small>
-                </div>
-              </div>
-              <div class="contact">
-                <span class="las la-user-circle"></span>
-                <span class="las la-comment"></span>
-                <span class="las la-phone"></span>
-              </div>
-            </div>
-            
-          </div>
-        </div>
-      </main>
-    </div>
-    <!--Importar JS-->
-    <script src="app.js"></script>
-  </body>
+  }
+</style>
+
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() { dataLayer.push(arguments); }
+  gtag('js', new Date());
+
+  gtag('config', 'G-DC34J5GENP');
+
+</script>
+
+<section class="header">
+<p center class="text-center">
+    <img style="height: 250px; width: 250px;" class="foto-perfil text-center" 
+       src="https://i.imgur.com/7USXoEl.png" alt="" style="max-width: 100%;">
+      </p center>
+<section class="container; text-center"><p class="text-center" style="font-family: Georgia, 'Times New Roman', Times, serif; color: #dd94b2;">S T U D I O<p></p><p class="text-center" style="font-family: Georgia, 'Times New Roman', Times, serif; color: #dd94b2; font-size: 34px; margin-top: -22px; font-style: italic;"> Valéria Cristina</p></section>
+<br>
+<section>
+<p center class="text-center">
+    <a href="#antesedepois"><button style="width: 250px; height: 50px; border-radius: 50px; background-color: #dc93b1;" type="button" class="btn btn-light">Portfólio</button>  
+</a><br><br>
+<a href="#https://api.whatsapp.com/send?1=pt_BR&phone=5512981094102"><button style="width: 250px; height: 50px; border-radius: 50px; background-color: #f4f4f4;" type="button" class="btn btn-light">WhatsApp</button>  
+</a><br><br>
+<a href="https://www.instagram.com/studiovaleriacristina/"><button style="width: 250px; height: 50px; border-radius: 50px; background-color: #dc93b1;" type="button" class="btn btn-light">Instagram</button>  
+</a><br><br>
+<a href="https://www.facebook.com/profile.php?id=100084564111261"><button style="width: 250px; height: 50px; border-radius: 50px; background-color: #f4f4f4;" type="button" class="btn btn-light">Facebook</button>  
+</a><br><br><br>
+</section>
+</section>
+<br><br><br><br>
+<section class="photo_section" style="margin-top: 130px;">
+    <p class="text-center" style="font-family: Georgia, 'Times New Roman', Times, serif; color: #dc93b1;; font-size: 38px; margin-top: -22px; font-style: italic;">
+        <br>Serviços:</p>
+        <p class="margin-top: 300px; text-center" style="font-family: Arial, Helvetica, sans-serif; font-size: 14px; color: #ffff"><strong>Escova Progressiva<br> Corte<br> Luzes e mechas<br> Moreno Iluminado <br> Manicure e pedicure<br>Design de sobrancelhas<br> Escova modelada<br> Terapia capilar (tratamentos para queda de cabelo, falhas, caspa, etc).<br> Hidratação <br> Botox <br> Tintura</p></strong>
+<br>
+<p class="text-center">
+<a href="https://api.whatsapp.com/send?1=pt_BR&phone=5512981094102"><button style="color: #000; width: 250px; height: 50px; border-radius: 50px; background-color: #dc93b1;;" type="button" class="btn btn-light">Agendar Horário</button>  
+</a></p>
+</section>
+<br>
+<br>
+<br>
+<br>
+<br>
+<section class="text-center" style="align-items: center;" id="antesedepois">
+    <p class="text-center" style="font-family: Georgia, 'Times New Roman', Times, serif; color: #dc93b1;; font-size: 38px; margin-top: -22px; font-style: italic;">Antes & Depois:</p>
+    <img class="" src="https://i.imgur.com/SdWTmvN.png" style="width: 250px;"></img><img class="" src="https://i.imgur.com/WU8o7LS.png" style="width: 250px; margin-right: 5px;"></img><img class="" src="https://i.imgur.com/c2XDvh5.png" style="width: 250px;"></img><img class="" src="https://i.imgur.com/v0ttzaA.png" style="width: 250px;"></img>
+</br>
+<br>
+<br>
+    <a href="https://www.instagram.com/studiovaleriacristina/"><button style="color: #000; width: 250px; height: 50px; border-radius: 50px; background-color: #dc93b1;;" type="button" class="btn btn-light">Ver mais no Instagram</button>  
+    </a>
+</section>
+<br>
+<br>
+    <br>
+    <br>
+<section style="background-color: #000;">
+    <br>
+    <p class="text-center" style="font-style: italic; font-size: 12px; color: #fff; background-color: #000;">
+     Mini Site desenvolvido por Luiza Oliveira | https://luizaoliveira.netlify.app/ | Copyright 2023
+     </p>
+     <br>
+</section>
+
+
+
+</body>
 </html>
